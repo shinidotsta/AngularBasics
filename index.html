@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body >
+    <div ng-controller="myController"> 
+     <div>
+       Country :{{country.Name}}
+     </div>
+     <div>
+         Capital:{{country.Capital}}
+     </div>
+     <div>
+       <img ng-src="{{ country.Flag }}" alt="{{ country.Name +'Flag' }}" style="width: 200px;height: 100px;">
+     </div>
+    </div>
+</body>
+</html>
